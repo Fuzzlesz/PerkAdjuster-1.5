@@ -18,8 +18,7 @@ namespace Papyrus {
 		std::vector<RE::BGSPerk*> a_parents,
 		std::vector<RE::BGSPerk*> a_children) {
 		
-		if (!a_perk || !a_info ||
-			std::abs(a_x) * 2.0 > a_info->perkTreeWidth) {
+		if (!a_perk || !a_info) {
 			return false;
 		}
 
